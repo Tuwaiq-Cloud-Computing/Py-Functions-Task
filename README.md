@@ -1,46 +1,63 @@
-# Py-Functions-Task
+#question1
+def Sum_value(x,y):
+    sum=x+y
+    return sum
+ 
+Val1=int(input("Enter the first number : "))
+Val2=int(input("Enter the second number  :"))
 
+print("The sum is",Sum_value(Val1,Val2))
 
-## Tasks:
+#question2
+list = ["Apple", "Banana", "Berry"]
+for x in list:
+  print(x)
 
+#question3
+Lab_list = [1,3,5,2,4]
+print ("The sum of my_list is",sum(Lab_list))
 
-- Question 1: Write a function that takes two numbers and return their sum 
-- Question 2: Prints all the elements in the list using a for loop
-- Question 3: Write a Python program to sum all the items in the list
-- Question 4: Write a Python program to get the largest number from the list
-- Question 5: write a function that take a list and a number then return a new partial list starting from index 0 to index "number"
-- Question 6: Loop through the letters in the string: "Tuwaiq_Academy
-- Question 7: Consider this ``` list = ["Python", "C++", "Java"] ``` Exit the loop when x is equal to "C++"
-- Question 8: Write a function that receives a list containing different numbers, rearranges the list so that the zeros are the end of the list, and finally returns the arranged list
+#question4
 
+Lab_list = [1,3,5,2,4]
+print("Largest element is:", max(Lab_list))
 
-## Additional Challenge:
+#question5
+Lab_list = [1,3,5,2,4]
 
+def my_function(Lab_list,number):
+    newlist=Lab_list[0:number]
+    return newlist
 
-- Build a phone book program that receives the phone number, and returns the name of the owner.
-You can follow the table below:
+print(my_function(Lab_list,3))
 
-## Contact Table
+#question6
 
-| Name | Number |
-| --- | ------------- |
-| Ahmed | 0551112222 |
-| Saad | 0551113333 |
-| Sultan | 0551114444 |
-| Morad | 0551115555 |
-| Abdullah| 0551116666 |
+string_name = "Abdul"
 
-This is the list of dictionaries you can use to build this function:
+for i, v in enumerate(string_name):
+    print(v)
+#question7
+list_Test = ["Python", "C++", "Java"]
+for x in list_Test:
+    print(x)
+    if x == "C++":
+        break
+    #Question8
+    
+def pushZerosToEnd(arr, n):
+	count = 0 
+	for i in range(n):
+		if arr[i] != 0:
+			arr[count] = arr[i]
+			count+=1
 
-```contactTable=[{"name":"Ahmed","Phone":"0551112222"},{"name":"Saad","Phone":"0551113333"},{"name":"Sultan","Phone":"0551114444"},{"name":"Morad","Phone":"0551115555"},{"name":"Abdullah","Phone":"0551116666"}] ```
+	while count < n:
+		arr[count] = 0
+		count += 1
 
-- If the number exists, print the owner. Otherwise, print "Sorry, the number is not found".
-- If the number is less or more than 10 numbers, print "This is invalid number".
-- If the number contains letters or symbols, print "This is invalid number".
-
-
-## Submission:
-
-
-- After finishing the task upload your Python script file to the forked repo and then create a pull request.
-
+arr = [1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9]
+n = len(arr)
+pushZerosToEnd(arr, n)
+print("Array after pushing all zeros to end of array:")
+print(arr)
