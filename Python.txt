@@ -1,0 +1,58 @@
+#Q1
+#class Math22():
+
+ #def sum():
+  #  x=input("FirstNum") 
+   # y=input("SecNum")
+
+    #return int(x)+int(y)
+
+   
+#print(sum())
+#######################################
+#Q2
+
+#mylist=[1,2,3,4,5]  
+#for i in mylist:
+ #    print(i)
+ ###################
+ #Q3
+#mylist=[1,2,3,4,5]
+#X=sum(mylist)
+#print(X)
+
+##################################
+#Q4
+#list1=[10, 20, 4, 45, 1]
+#list1.sort()
+#print("Largest element is:", list1[-1])
+
+###################################
+#Q5
+#def partial_list(list, number):
+  #  return list[:number]
+########################################
+#Q6
+#string = "Tuwaiq_Academy"
+
+#for letter in string:
+ #   print(letter)
+ #####################################
+ #Q7
+# list = ["Python", "C++", "Java"]
+
+#   for x in list:
+#      if x == "C++":
+ #       break
+ #   print(x)
+ #########################################
+ #Q8
+# def rearrange_list(list):
+ #   zeros = []
+  #  non_zeros = []
+   # for i in list:
+    #    if i == 0:
+     #       zeros.append(i)
+      #  else:
+       #     non_zeros.append(i)
+    #return non_zeros + zeros
