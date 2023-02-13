@@ -1,0 +1,56 @@
+
+#Q1
+n1 = int(input('Enter first number : '))
+n2 = int(input('Enter second number : '))
+
+sum = n1 + n2
+print('Sum =', sum)
+
+#Q2
+a = [1, 2, 3, 4, 5]
+  
+for x in range(len(a)):
+    print(a[x]),
+    
+
+#Q3
+def sum_of_list(l):
+  total = 0
+  for val in l:
+    total = total + val
+  return total
+
+my_list = [1,3,5,2,4]
+print("The sum of my_list is", sum_of_list(my_list))
+
+
+#Q4
+larglist = [2, 5, 3, 7]
+larglist.sort (reverse = True)
+print (larglist [0])
+
+
+#Q5
+def myfunc (someList: list, num: int):
+    return someList.append (num)
+
+
+#Q6
+tempStr = 'Tuwaiq_Academy'
+
+for element in tempStr:
+    print (element)
+    
+    
+#Q7    
+list = ["Python", "C++", "Java"]
+for i in list:
+    if i == 'C++':
+        break
+    else:
+        print (i)
+
+
+#Q8
+def sortFunc (tempList: list):
+    return tempList.sort (reversed = True)
