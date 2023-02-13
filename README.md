@@ -1,4 +1,57 @@
-# Py-Functions-Task
+
+x = int(input("Enter First Number:\n"))
+y = int(input("Enter Second Number:\n"))
+Sum = sum([x,y])
+print("Sum of", x, "and", y, "is", Sum)
+
+
+
+
+
+mylist = ["A", "B", "C"]
+for x in mylist:
+  print(x)
+  
+def sum_of_list(l):
+  total = 0
+  for val in l:
+    total = total + val
+  return total
+
+my_list = [1,3,5,2,4]
+print ("The sum of my_list is", sum_of_list(my_list))
+
+
+list1 = [10, 20, 4, 45, 99]
+print("Largest element is:", max(list1))
+
+
+
+t = 'Tuwaiq_Academy'
+
+for i in range(len(t)):
+    print(t[i])
+	
+	list = ["Python", "C++", "Java"]
+for i in list:
+    print(i)
+    if i =="C++":
+     break
+	 
+	# creating an empty list
+lst = []
+  
+# number of elements as input
+n = int(input("Enter number of elements : "))
+  
+# iterating till the range
+for i in range(0, n):
+    ele = int(input())
+  
+    lst.append(ele) # adding the element
+    lst.sort(reverse=True)
+      
+print(lst)# Py-Functions-Task
 
 
 ## Tasks:
