@@ -4,14 +4,75 @@ List=[1,2,3,4]
 ## Tasks:
 
 
-- Question 1: Write a function that takes two numbers and return their sum 
+- Question 1: Write a function that takes two numbers and return their sum
+def add_numbers(num1, num2):
+    sum = num1 + num2
+    print("Sum: ",sum)
+
+
+add_numbers(2, 3)
+
+
 - Question 2: Prints all the elements in the list using a for loop
+
+List=[1,2,3,4]
+for x in List:
+  print(x)
+
+
 - Question 3: Write a Python program to sum all the items in the list 
+def sum_list(items):
+    sum_numbers = 0
+    for x in items:
+        sum_numbers += x
+    return sum_numbers
+print(sum_list([1,2,3,4]))
+
 - Question 4: Write a Python program to get the largest number from the list
+List=[1,2,3,4]
+ 
+
+List.sort()
+
+print("Largest element is:", List[-1])
+
+
 - Question 5: write a function that take a list and a number then return a new partial list starting from index 0 to index "number"
 - Question 6: Loop through the letters in the string: "Tuwaiq_Academy
+- 
+string = "Tuwaiq_Academy"
+
+for letter in string:
+  print(letter)
+  
 - Question 7: Consider this ``` list = ["Python", "C++", "Java"] ``` Exit the loop when x is equal to "C++"
+
+list = ["Python", "C++", "Java"]
+
+for x in list:
+  if x == "C++":
+    print("C++")
+    break
+- 
 - Question 8: Write a function that receives a list containing different numbers, rearranges the list so that the zeros are the end of the list, and finally returns the arranged list
+def move_zeros_to_end(list_of_numbers):
+
+  non_zero_elements = []
+  zero_elements = []
+
+  for element in list_of_numbers:
+    if element != 0:
+      non_zero_elements.append(element)
+    else:
+      zero_elements.append(element)
+
+  return non_zero_elements + zero_elements
+  
+list_of_numbers = [0, 0, 2, 4, 8, 9, 4]
+
+new_list = move_zeros_to_end(list_of_numbers)
+
+print(new_list)
 
 
 ## Additional Challenge:
