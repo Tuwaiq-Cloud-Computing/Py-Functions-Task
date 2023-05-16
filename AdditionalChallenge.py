@@ -16,21 +16,3 @@ def _phoneBook(phoneNumber):
 
             if (checkNumber["Phone"] != phoneNumber):
                     print("Sorry, the number is not found")
-
-
-
-
-
-
-num_1 =_phoneBook("0569861476")
-num_2 =_phoneBook("0569861000")
-num_3 =_phoneBook("dfghjk")
-num_4 =_phoneBook("0551115555")
-
-num_1
-
-num_2
-
-num_3
-
-num_4
