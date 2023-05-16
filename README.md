@@ -13,6 +13,68 @@ List=[1,2,3,4]
 - Question 7: Consider this ``` list = ["Python", "C++", "Java"] ``` Exit the loop when x is equal to "C++"
 - Question 8: Write a function that receives a list containing different numbers, rearranges the list so that the zeros are the end of the list, and finally returns the arranged list
 
+# Task2
+List=[1,2,3,4,]
+
+#Q1
+def sum(x,y):
+    print(x+y)
+
+x= input("enter x: ")
+x= int(x) #to convert input from string to int
+y= input("enter y: ")
+y=int(y)
+sum(x,y)
+
+#Q2
+for i in List:
+    print(i)
+
+#Q3
+print("the sum of the list: ", sum(List))
+
+#Q4
+print ("the largest number is: ", max(List))
+
+#Q5
+def list():
+
+    newList =[]
+    Lindex = int(input("Enter the last index: "))
+    i=0
+
+    for i in range (i,Lindex+1):
+        newList.append(i)
+    print("my new list: ", newList)
+
+    cut = int(input("Enter the cut index: "))
+    print(newList[0:cut+1])
+
+list()
+
+
+#Q6
+A= "Tuwaiq_Academy"
+for x in A:
+    print(x)
+
+#Q7
+list = ["Python", "C++", "Java"]
+for i in list:
+    if i == "C++":
+        break
+    print (i)
+
+#Q8
+def arrange(Alist):
+    for i in Alist:
+        if i ==0:
+            Alist.remove(i)
+            Alist.append(0)
+    return print(Alist)
+
+Alist = [0,3,5,4,0,6,0,4]
+arrange(Alist)
 
 ## Additional Challenge:
 
