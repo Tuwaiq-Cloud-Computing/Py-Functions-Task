@@ -5,13 +5,51 @@ List=[1,2,3,4]
 
 
 - Question 1: Write a function that takes two numbers and return their sum 
+def sumFunc(num1,num2):
+sum = num1+ num2
+print (sum)
+sumFunv(3,5)
+
 - Question 2: Prints all the elements in the list using a for loop
+myList= [1, 2, 3,4]
+for num in myList:
+  print(num)
+  
 - Question 3: Write a Python program to sum all the items in the list 
+sumList = 0
+for num in myList:
+sumList = SumList + num
+print ('the sum for myList is ',sumList)
+
 - Question 4: Write a Python program to get the largest number from the list
+laggestNum = 0
+for num > lagg in MyList
+if num > laggestNum:
+laggestNum= num
+print ('the laggest number is: ',laggestNum)
+
 - Question 5: write a function that take a list and a number then return a new partial list starting from index 0 to index "number"
+
 - Question 6: Loop through the letters in the string: "Tuwaiq_Academy
+name = "Tuwaiq_Academy"
+for x in name:
+print(x)
+
 - Question 7: Consider this ``` list = ["Python", "C++", "Java"] ``` Exit the loop when x is equal to "C++"
+List = [python,"C++","Java"]
+for x in list :
+if x =='c++'
+break
+print x
 - Question 8: Write a function that receives a list containing different numbers, rearranges the list so that the zeros are the end of the list, and finally returns the arranged list
+def arrage (list1):
+    for i in list1:
+    if i==0
+    list.remove(i)
+    list.append(0)
+    return print(list1)
+    list = [0,3,0,5,7,9]
+    arrange(list1)
 
 
 ## Additional Challenge:
