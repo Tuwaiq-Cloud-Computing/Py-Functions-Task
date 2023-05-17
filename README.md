@@ -44,3 +44,95 @@ This is the list of dictionaries you can use to build this function:
 
 - After finishing the task upload your Python script file to the forked repo and then create a pull request.
 
+
+
+def add_numbers(num1, num2):
+    return num1 + num2
+result = add_numbers(5, 10)
+print(result)
+
+
+
+List = [1, 2, 3, 4]
+for element in List:
+    print(element)
+
+
+
+total = sum(List)
+print(total)
+
+
+
+largest_num = max(List)
+print(largest_num)
+
+
+
+def partial_list(lst, num):
+    return lst[:num+1]
+result = partial_list(List, 2)
+print(result)
+
+
+
+Tuwaiq = "Tuwaiq_Academy"
+for letter in Tuwaiq:
+    print(letter)
+
+
+
+list2 = ["Python", "C++", "Java"]
+for x in list2:
+    print(x)
+    if x == "C++":
+        break
+
+
+
+def rearrange_list(lst):
+    zero = []
+    non_zero = []
+    for item in lst:
+        if item == 0:
+            zero.append(item)
+        else:
+            non_zero.append(item)
+    return non_zero + zero
+
+list3 = [1, 2, 0, 4, 0, 5, 0]
+result = rearrange_list(list3)
+print(result)
+
+
+
+
+
+
+# Additional Challenge:
+
+
+contactTable = [
+    {"name": "Ahmed", "Phone": "0551112222"},
+    {"name": "Saad", "Phone": "0551113333"},
+    {"name": "Sultan", "Phone": "0551114444"},
+    {"name": "Morad", "Phone": "0551115555"},
+    {"name": "Abdullah", "Phone": "0551116666"}
+]
+
+def find_owner(phone_number):
+    if not phone_number.isdigit() or len(phone_number) != 10:
+        print("This is an invalid number")
+        return
+
+    for contact in contactTable:
+        if contact["Phone"] == phone_number:
+            print("The owner of the phone number {} is {}".format(phone_number, contact["name"]))
+            return
+
+    print("Sorry, the number is not found")
+
+find_owner("0551112222")
+find_owner("0551117777")
+find_owner("055111")
+find_owner("0551119999a")
