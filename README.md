@@ -91,6 +91,27 @@ This is the list of dictionaries you can use to build this function:
 - If the number exists, print the owner. Otherwise, print "Sorry, the number is not found".
 - If the number is less or more than 10 numbers, print "This is invalid number".
 - If the number contains letters or symbols, print "This is invalid number".
+contactTable=[{"name":"Ahmed","Phone":"0551112222"},{"name":"Saad","Phone":"0551113333"}
+              ,{"name":"Sultan","Phone":"0551114444"}
+              ,{"name":"Morad","Phone":"0551115555"},
+              {"name":"Abdullah","Phone":"0551116666"}] 
+
+
+def find_contact_owner(number):
+    if not number.isdigit() or len(number) != 10:
+        return "This is an invalid number"
+    
+    for contact in contactTable:
+        if contact["Phone"] == number:
+            return f"The owner of the number {number} is {contact['name']}"
+    
+    return "Sorry, the number is not found"
+
+number = input("Enter a 10-digit number: ")
+result = find_contact_owner(number)
+print(result)
+
+
 
 
 ## Submission:
