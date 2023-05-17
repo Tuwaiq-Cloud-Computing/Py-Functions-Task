@@ -92,6 +92,31 @@ You can follow the table below:
 
 This is the list of dictionaries you can use to build this function:
 
+
+#The solution:-
+def getOwner(phone_number):
+   # Check if the phone number is valid
+   if not phone_number.isdigit() or len(phone_number) != 10:
+       print("This is invalid number")
+       return
+
+   # Search for the phone number in the contact table
+   for contact in contactTable:
+       if contact["Phone"] == phone_number:
+           print(contact["name"])
+           return
+
+   print("Sorry, the number is not found")
+
+contactTable=[{"name":"Ahmed","Phone":"0551112222"},{"name":"Saad","Phone":"0551113333"},{"name":"Sultan","Phone":"0551114444"},{"name":"Morad","Phone":"0551115555"},{"name":"Abdullah","Phone":"0551116666"}]
+
+getOwner("0551114444")  
+getOwner("0551112222")
+getOwner("1234567890")  
+getOwner("05050505")    
+getOwner("0512355a$")
+
+
 ```contactTable=[{"name":"Ahmed","Phone":"0551112222"},{"name":"Saad","Phone":"0551113333"},{"name":"Sultan","Phone":"0551114444"},{"name":"Morad","Phone":"0551115555"},{"name":"Abdullah","Phone":"0551116666"}] ```
 
 - If the number exists, print the owner. Otherwise, print "Sorry, the number is not found".
