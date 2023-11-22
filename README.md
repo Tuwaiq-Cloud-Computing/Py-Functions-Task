@@ -4,16 +4,61 @@ List=[1,2,3,4]
 ## Tasks:
 
 
-- Question 1: Write a function that takes two numbers and return their sum 
+- Question 1: Write a function that takes two numbers and return their sum
+
+def function (a,b):
+    result=a+b
+    return result
+print (function (1,3))
+  _____________________________________________________________________________________
 - Question 2: Prints all the elements in the list using a for loop
-- Question 3: Write a Python program to sum all the items in the list 
+ list = [1,2,3,4]
+for x in list:
+  print(x)
+  ____________________________________________________________________________________
+- Question 3: Write a Python program to sum all the items in the list
+  num = [1,2,3,4]
+sum_all_items=sum(num)
+print (f"the sum is:{sum_all_items}")
+______________________________________________________________________________________
 - Question 4: Write a Python program to get the largest number from the list
+  num = [1,2,3,4]
+largest=max(num)
+ print ({largest})
+______________________________________________________________________________________
 - Question 5: write a function that take a list and a number then return a new partial list starting from index 0 to index "number"
+ def function (list,number):
+ new_list = list[:number]
+ return new_list
+list=[2,4,6,8,10]
+print( function(list,4))
+print( function(list,2))
+__________________________________________________________________________________________
+  
 - Question 6: Loop through the letters in the string: "Tuwaiq_Academy"
+ for x in "Tuwaiq_Academy":
+  print(x)
+  ____________________________________________________________________________________________
 - Question 7: Consider this ``` list = ["Python", "C++", "Java"] ``` Exit the loop when x is equal to "C++"
+list = ["Python", "C++", "Java"]
+for x in list:
+  print (x)
+  if x=="C++":
+    break
+  ______________________________________________________________________________________________
 - Question 8: Write a function that receives a list containing different numbers, rearranges the list so that the zeros are the end of the list, and finally returns the arranged list
 
+def function(list):
+      # zcount=list.count(0)
+      for x in list:
+          list.remove(0)
+          list.append(0)
+      return list
 
+newlist=[0,3,7,0,7]
+result = function(newlist)
+print(result)
+__________________________________________________________________________________________________________________
 ## Additional Challenge:
 
 
