@@ -1,0 +1,82 @@
+Q1 -----
+def sum_two_numbers(num1, num2):
+    return num1 + num2
+
+Q2 -----
+List = [1, 2, 3, 4]
+
+for element in List:
+    print(element)
+
+Q3 -----
+List = [1, 2, 3, 4]
+
+total_sum = 0
+for element in List:
+    total_sum += element
+
+print("The sum of all the items in the list is:", total_sum)
+
+Q4 -----
+List = [1, 2, 3, 4]
+
+largest_number = List[0]
+for element in List:
+    if element > largest_number:
+        largest_number = element
+
+print("The largest number in the list is:", largest_number)
+
+
+Q5 -----
+def get_partial_list(list1, number):
+    partial_list = list1[0:number]
+    return partial_list
+
+
+Q6 -----
+string = "Tuwaiq_Academy"
+
+for letter in string:
+    print(letter)
+
+
+Q7 -----
+list1 = ["Python", "C++", "Java"]
+
+for x in list1:
+    if x == "C++":
+        break
+    print(x)
+
+Q8 ------
+def rearrange_list(list1):
+    arranged_list = []
+    for element in list1:
+        if element != 0:
+            arranged_list.append(element)
+    for element in list1:
+        if element == 0:
+            arranged_list.append(element)
+
+    return arranged_list
+
+Additional ---- 
+
+contactTable=[{"name":"Ahmed","Phone":"0551112222"},{"name":"Saad","Phone":"0551113333"},{"name":"Sultan","Phone":"0551114444"},{"name":"Morad","Phone":"0551115555"},{"name":"Abdullah","Phone":"0551116666"}]
+
+def find_contact(phoneNumber):
+    if len(phoneNumber) != 10 or not phoneNumber.isdigit():
+        print("This is invalid number")
+        return
+    for contact in contactTable:
+        if contact["Phone"] == phoneNumber:
+            print("The owner of the number", phoneNumber, "is", contact["name"])
+            return
+    print("Sorry, the number is not found")
+
+phoneNumber = input("Enter the phone number: ")
+find_contact(phoneNumber)
+
+
+
