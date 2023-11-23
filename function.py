@@ -1,67 +1,63 @@
-# Create list of three elements
-color_list = ["red", "yellow", "green"]
-print(color_list)
-print("----------")
-# add an element to the end of list
-color_list.append("white")
-print(color_list)
-print("----------")
-# remove an element from the list
-color_list.remove("white")
-print(color_list)
-print("----------")
-# reverse the list
-color_list.reverse()
-print(color_list)
-print("----------")
-# sort the list
-color_list.sort()
-print(color_list)
-print("----------")
-# add an element at the start of the list
-color_list.insert(0, "white")
-print(color_list)
+def num_sum(a, b):
+    return (a + b)
 
-print("----------")
-# print the index of the last element
-index = len(color_list)-1
-print(index)
+result = num_sum(25, 27)
+print ("this is the result ", result) 
 
-people = ["Ahmed", "Nasser", "Mohammed"]
-print("----------")
+list = [1, 2, 3, 4]
 
-# Join the list elements using a comma and a space
-print(", ".join(people))
-print("----------")
+for x in list:
+  print(x)
 
-#Make a list of 3 dictionaries, each dictionary should contain information such as: name, phone_number
-people = [
-    {"Ahmed", "123-456-7890"},
-    {"Nasser", "987-654-3210"},
-    {"Mohammed", "555-444-3333"}
-]
-for person in people:
-    print(person)
+def calculate_sum(list):
+    total_sum = 0
+    for item in list:
+        total_sum += item
+    return total_sum
 
- 
-# now add 1 more dictionary to the list
-people.append({"Omar", "444-333-2222"})
-print("----------")
-for person in people:
-    print(person)
+total_sum = calculate_sum(list) 
+print("The sum of all elements in the list:", total_sum)
 
-# now delete the name from the first dictionary
-del people[0]
-print("\nList after deleting first name `:")
-print(people)
+large_num = max(list)
+print("the large number in the lis is ", large_num)
 
-#update the phone number of the last person
 
-#last_person = people[-1]
-#last_person["44-333-2222"] = "777-666-5555"
-#print(people)
+def partial_list(lst, number):
+    if number < 0:
+        return []
+    elif number >= len(lst):
+        return lst
+    else:
+        return lst[:number+1]
 
-if "name" in people[0]:
-    print("The first dictionary has a key called 'name'")
-else:
-    print("The first dictionary does not have a key called 'name'")
+result4 = partial_list(list, 1)
+print(result4)
+
+String = "Tuwaiq_Academy"
+for letter in String:
+    print(letter)
+
+lang_list = ["Python", "C++", "Java"]
+
+for lang in lang_list:
+
+    print(lang)
+    if lang == "C++":
+      break
+
+my_list = [1, 0, 5, 0, 3, 0, 8, 0 ,2, 3,0]
+
+def end_zeros(lst):
+    zeros = []
+    non_zeros = []
+
+    for num in lst:
+        if num == 0:
+            zeros.append(num)
+        else:
+            non_zeros.append(num)
+
+    return non_zeros + zeros
+
+result5 = end_zeros(my_list)
+print("**", result5 , "**")
